@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/normalize.css">
+
+	<title>IAKE</title>
+	<meta name="description" content="Сайт для поиска недвижимости">
+  	<meta name="keywords" content="квартира, дом, аренда, продажа, покупка, жильё, недвижимость, студия">
+
+  	<meta name="robots" content="index,follow,noodp"> <!-- Все поисковые системы -->
+  	<meta name="googlebot" content="index,follow">    <!-- Указание отдельно для Google -->
+</head>
+<body>
+
+<header>
+
+	<nav>
+		<div class="nav_logo">
+			<img src="img/logo.png" alt="">
+			<p>IAKE</p>
+		</div>
+		<div class="nav_inner">
+			<div class="nav_list">
+				<ul>
+					<li><a id="li_1">Аренда</a></li>
+					<li><a id="li_2">Продажа</a></li>
+					<li><a id="li_3">Новостройки</a></li>
+					<li><a id="li_4">Коммерческая</a></li>
+					<li><a id="li_5">Оценка</a></li>
+					<li><a id="li_6">Ипотека</a></li>
+					<li class="hide_dote"><a id="li_7">...</a></li>
+				</ul>
+			</div>
+			<div class="nav_icon">
+				<div class="icons">
+					<div class="icon_heart">
+						<svg>
+							<path fill="transparent" stroke-width="2" stroke="#7a7a7a" d="M 1 5.90814 C 1 11.0647 8 15 8 15 C 8 15 15 11.0647 15 5.90814 C 15 3.74973 13.2405 2 11.0701 2 C 9.82783 2 8.72015 2.57327 8 3.46831 C 7.27985 2.57327 6.17217 2 4.92985 2 C 2.75946 2 1 3.74973 1 5.90814 Z"/>
+						</svg>
+					</div>
+					<div class="icon_bell">
+						<svg>
+							<path fill="transparent" stroke-width="2" stroke="#7a7a7a" d="M 12.0379 5.33187 V 5.06452 C 12.0379 2.82 10.2179 1 7.97341 1 V 1 C 5.7289 1 3.9089 2.82 3.9089 5.06452 V 5.33187 C 3.9089 6.61716 3.22515 7.81213 2.10967 8.45161 C 1.5307 8.784 1.19922 9.16877 1.19922 9.58064 C 1.19922 10.828 4.23225 11.8387 7.97341 11.8387 C 11.7146 11.8387 14.7476 10.828 14.7476 9.58064 C 14.7476 9.16877 14.4161 8.784 13.8372 8.45161 C 12.7217 7.81303 12.0379 6.61716 12.0379 5.33187 Z"/>
+							<path fill="transparent" stroke-width="2" stroke="#7a7a7a" d="M10.0427 14.0968C9.69409 14.6285 8.89834 15 7.97254 15C7.04673 15 6.25189 14.6285 5.90234 14.0974"/>
+						</svg>
+					</div>
+				</div>
+				<div class="advt">
+					<button class="button_main">+ Разместить объявление</button>
+				</div>
+				<div class="enter">
+					<button class="button_main">Войти</button>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="nav_mobile">
+		<div class="mobile_logo">
+			<img src="img/logo.png" alt="">
+			<p>IAKE</p>
+		</div>
+		<div class="mobile_advt">
+			<img src="img/icons/smile.png" alt="">
+			<p>Как кризис влияет на рынок жилья</p>
+		</div>
+		<div class="mobile_buttons">
+			<button class="button_main">Войти</button>
+			<button class="button_main">+ Разместить объявление</button>
+		</div>
+	</div>
+
+	<div class="nav_content" id="header_show">
+		<div class="exit_icon" id="button_close">&#215;</div>
+		<div class="nav_content_inner">
+
+			<div class="block block_1 block_1_1" id="block_1_1">
+				<ul>
+					<li class="bold">Длительная аренда</li>
+					<li class="main">Квартиры</li>
+					<li class="main">Комнаты</li>
+					<li class="main">Дома и коттеджи</li>
+					<li class="bold">Посуточная аренда</li>
+				</ul>
+			</div>
+			<div class="block block_2 block_2_1" id="block_2_1">
+				<ul>
+					<li class="bold">Журнал</li>
+					<li class="main">Как снять или сдать квартиру</li>
+					<li class="main">Как купить или продать квартиру на вторичном рынке</li>
+				</ul>
+			</div>
+
+			<div class="block block_1 block_1_2" id="block_1_2">
+				<ul>
+					<li class="bold">Квартиры</li>
+					<li class="bold">Квартиры в новостройках</li>
+					<li class="bold">Квартиры во вторичке</li>
+					<li class="bold">Комнаты и доли</li>
+					<li class="bold">Дома и коттеджи</li>
+					<li class="bold">Участки</li>
+				</ul>
+			</div>
+			<div class="block block_2 block_2_2" id="block_2_2">
+				<ul>
+					<li class="bold">Журнал</li>
+					<li class="main">Как купить или продать квартиру на вторичном рынке</li>
+					<li class="main">Всё, что важно знать при покупке новостройки</li>
+					<li class="main">Всё о загородном рынке</li>
+				</ul>
+			</div>
+
+			<div class="block block_1 block_1_3" id="block_1_3">
+				<ul>
+					<li class="bold">Квартиры</li>
+					<li class="bold">Каталог жилых комплексов</li>
+					<li class="bold">Каталог коттеджных поселков</li>
+				</ul>
+			</div>
+			<div class="block block_2 block_2_3" id="block_2_3">
+				<ul>
+					<li class="bold">Журнал</li>
+					<li class="main">Как купить дом и не пожалеть</li>
+					<li class="main">Всё, что важно знать при покупке новостройки</li>
+					<li class="main">Дизайн и ремонт</li>
+				</ul>
+			</div>
+
+			<div class="block block_1 block_1_4" id="block_1_4">
+				<ul>
+					<li class="bold">Аренда</li>
+					<li class="main">Аренда офиса</li>
+					<li class="main">Аренда коворкинга</li>
+					<li class="main">Аренда торговой площади</li>
+					<li class="main">Аренда складского помещения</li>
+				</ul>
+			</div>
+			<div class="block block_2 block_2_4" id="block_2_4">
+				<ul>
+					<li class="bold">Продажа</li>
+					<li class="main">Продажа офиса</li>
+					<li class="main">Продажа торговой площади</li>
+					<li class="main">Продажа складского помещения</li>
+				</ul>
+			</div>
+
+			<div class="block block_1 block_1_5" id="block_1_5">
+				<ul>
+					<li class="bold">Оценка квартиры</li>
+					<li class="bold">Инвестиционный калькулятор</li>
+					<li class="bold">Аналитика ЖК</li>
+					<li class="bold">Аналитика для бизнеса</li>
+					<li class="bold">Пульс рынка недвижимости</li>
+				</ul>
+			</div>
+			<div class="block block_2 block_2_5" id="block_2_5">
+				<ul>
+					<li class="bold">Журнал</li>
+					<li class="main">Как правильно оценить квартиру</li>
+					<li class="main">Аналитика для покупателей и продавцов</li>
+				</ul>
+			</div>
+
+			<div class="block block_1 block_1_6" id="block_1_6">
+				<ul>
+					<li class="bold">Персональные ипотечные предложения</li>
+					<li class="bold">Онлайн-одобрение ипотеки</li>
+					<li class="bold">Ипотечный центр</li>
+					<li class="bold">Ипотечный калькулятор</li>
+				</ul>
+			</div>
+			<div class="block block_2 block_2_6" id="block_2_6">
+				<ul>
+					<li class="bold">Журнал</li>
+					<li class="main">Как получить выгодную ипотеку</li>
+				</ul>
+			</div>
+
+			<div class="block block_3">
+				<img src="img/help.png" alt="">
+			</div>
+			<div class="block block_4">
+				<ul>
+					<li>Поиск по карте</li>
+					<li>Справочный центр</li>
+					<li>Каталог застройщиков</li>
+					<li>Каталог риелторов</li>
+					<li>Вопросы риэлтору</li>
+					<li>Карьера в Циан</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+<main>
+
+	<section class="search_outer">
+		<div class="search_inner">
+			<div class="search_container">
+				<h1>#лучшедома ищи на Iake</h1>
+				<div class="change_buttons">
+					<ul>
+						<li><a href="#1">Купить</a></li>
+						<li><a href="#1">Снять</a></li>
+						<li><a href="#1">Посуточно</a></li>
+						<li><a href="#1">Оценить</a></li>
+						<li><a href="#1">Ипотека</a></li>
+						<li><a href="#1">Подбор риелтора</a></li>
+					</ul>
+				</div>
+				<div class="search_block">
+					<ul>
+						<li class="search_block_1">
+							<p>Квартиру в новостройке или вторичке</p>
+							<div></div>
+						</li>
+						<li class="search_block_2">
+							<p>1,2 комн.</p>
+							<div></div>
+						</li>
+						<li class="search_block_3">
+							<p>Цена</p>
+							<div></div>
+						</li>
+						<li class="search_block_4">
+							<input type="text" placeholder="Город, адресс, метро, район, жд, шоссе или ЖК">
+						</li>
+					</ul>
+				</div>
+				<div class="search_buttons">
+					<button class="search_button_1">Показать на карте</button>
+					<button class="search_button_2">Найти</button>
+				</div>
+			</div>	
+		</div>
+	</section>
+
+	<sectiom class="mobile_menu">
+		
+		<h2>Поиск недвижимости</h2>
+
+		<div class="mobile_menu_inner">
+			<br>
+			<div class="menu_container menu_container_1">
+				<img src="img/icons/mobile/key.svg" alt="key">
+				<br><br><br>
+				<p>Купить</p>
+			</div>
+			<div class="menu_container menu_container_2">
+				<img src="img/icons/mobile/bed.svg" alt="key">
+				<br><br><br>
+				<p>Снять</p>
+			</div>
+			<div class="menu_container menu_container_3">
+				<img src="img/icons/mobile/house.svg" alt="key">
+				<br><br><br>
+				<p>Новостройки</p>
+			</div>
+			<div class="menu_container menu_container_4">
+				<img src="img/icons/mobile/money.svg" alt="key">
+				<br><br><br>
+				<p>Дома и участки</p>
+			</div>
+			<div class="menu_container menu_container_5">
+				<img src="img/icons/mobile/bank.svg" alt="key">
+				<br><br><br>
+				<p>Коммерческая</p>
+			</div>
+			<div class="menu_container menu_container_6">
+				<img src="img/icons/mobile/calend.svg" alt="key">
+				<br><br><br>
+				<p>Ипотека</p>
+			</div>
+		</div>
+	</sectiom>
+
+	<section class="info_outer">
+		<div class="info_inner">
+			<h2>Полезные ссылки</h2>
+			<div class="info_link">
+				<div class="block block_1_0">
+					<div class="block_1_1 img_bg"></div>
+					<div class="block_1_2">
+						<ul>
+							<li><p>Купить квартиру</p></li>
+							<li><p><a href="#1">1-комнатные</a></p><p>1 842</p></li>
+							<li><p><a href="#1">2-комнатные</a></p><p>2 652</p></li>
+							<li><p><a href="#1">3-комнатные</a></p><p>1 881</p></li>
+							<li><p><a href="#1">Свободная планировка</a></p><p>31</p></li>
+							<li><p><a href="#1">Квартиры-студии</a></p><p>466</p></li>
+							<li><p><a href="#1">Комнаты в квартире</a></p><p>1 107</p></li>
+						</ul>
+					</div>
+				</div>
+				<div class="block block_2_0">
+					<div class="block_2_1 img_bg"></div>
+					<div class="block_2_2">
+						<ul>
+							<li><p>Снять квартиру</p></li>
+							<li><p><a href="#1">1-комнатные</a></p><p>269</p></li>
+							<li><p><a href="#1">2-комнатные</a></p><p>271</p></li>
+							<li><p><a href="#1">3-комнатные</a></p><p>93</p></li>
+							<li><p><a href="#1">Квартиры-студии</a></p><p>35</p></li>
+							<li><p><a href="#1">Комнаты в квартире</a></p><p>237</p></li>
+						</ul>
+					</div>
+				</div>
+				<div class="block block_3">
+					<div class="block_3_1">
+						<ul>
+							<li><p>Снять посуточно</p></li>
+							<li><p><a href="#1">Квартиры посуточно</a></p><p>285</p></li>
+							<li><p><a href="#1">Коттеджи на сутки</a></p><p>57</p></li>
+						</ul>
+					</div>
+					<div class="block_3_2 img_bg"></div>
+				</div>
+				<div class="block block_4">
+					<div class="block_4_1">
+						<ul>
+							<li><p>Новостройки</p></li>
+							<li><p><a href="#1">Каталог ЖК</a></p><p>188</p></li>
+							<li><p><a href="#1">Сданные новостройки</a></p><p>104</p></li>
+							<li><p><a href="#1">Строящиеся новостройки</a></p><p>99</p></li>
+						</ul>
+					</div>
+					<div class="block_4_2 img_bg"></div>
+				</div>
+				<div class="block block_5">
+					<div class="block_5_1">
+						<ul>
+							<li><p>Загородная недвижимость</p></li>
+							<li><p><a href="#1">Каталог посёлков</a></p><p>113</p></li>
+							<li><p><a href="#1">Купить дом</a></p><p>4 943</p></li>
+							<li><p><a href="#1">Купить таунхаус</a></p><p>45</p></li>
+							<li><p><a href="#1">Купить участок</a></p><p>3 465</p></li>
+							<li><p><a href="#1">Снять дом надолго</a></p><p>32</p></li>
+						</ul>
+					</div>
+					<div class="block_5_2 img_bg"></div>
+				</div>
+				<div class="block block_6">
+					<div class="block_6_1 img_bg"></div>
+					<div class="block_6_2">
+						<ul>
+							<li><p>Коммерческая недвижимость</p></li>
+							<li><p><a href="#1">Купить склад</a></p><p>54</p></li>
+							<li><p><a href="#1">Купить гараж</a></p><p>181</p></li>
+							<li><p><a href="#1">Купить офис</a></p><p>273</p></li>
+							<li><p><a href="#1">Арендовать офис</a></p><p>406</p></li>
+							<li><p><a href="#1">Арендовать помещение</a></p><p>279</p></li>
+							<li><p><a href="#1">Арендовать торговую площадь</a></p><p>315</p></li>
+						</ul>
+					</div>
+				</div>
+				<div class="block block_7">
+					<div class="block_7_1">
+						<p>Поиск на карте</p>
+						<p>Ищите новостройки рядом с работой,<br>
+						парком или родственниками</p>
+						<button>Найти на карте</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="realtors_outer">
+		<div class="realtors_inner">
+			<h2>Специалисты</h2>
+			<div class="realtors_container">
+				<div class="container_0 container_1">
+					<h3>Риелторы</h3>
+					<div class="agency">
+						<div class="agency_1">
+							<div class="agency_0">
+								<img src="img/icons/avatar_1.jpg" alt="">
+								<p><a href="№1">Олег Мерзляков</a></p><br>
+								<p>40 предложений</p>
+							</div>
+						</div>
+						<div class="agency_1">
+							<div class="agency_0">
+								<img src="img/icons/avatar_2.jpg" alt="">
+								<p><a href="№1">Игорь Бувайлов</a></p><br>
+								<p>31 предложений</p>
+							</div>
+						</div>
+						<div class="agency_1">
+							<div class="agency_0">
+								<img src="img/icons/avatar_3.jpg" alt="">
+								<p><a href="№1">Вячаслав Садыров</a></p><br>
+								<p>15 предложений</p>
+							</div>
+						</div>
+					</div>
+					<p><a href="#1">Все риелторы</a></p>
+				</div>
+
+				<div class="container_0 container_2">
+					<h3>Агенства</h3>
+					<div class="agency">
+						<div class="agency_1">
+							<div class="agency_0">
+								<img src="img/icons/avatar_4.jpg" alt="">
+								<p><a href="№1">INHAUS</a></p><br>
+								<p>26 предложений</p>
+							</div>
+						</div>
+						<div class="agency_1">
+							<div class="agency_0">
+								<img src="img/icons/avatar_5.jpg" alt="">
+								<p><a href="№1">Ю-РИЭЛ</a></p><br>
+								<p>21 предложение</p>
+							</div>
+						</div>
+						<div class="agency_1">
+							<div class="agency_0">
+								<img src="img/icons/avatar_6.jpg" alt="">
+								<p><a href="№1">МАКРОМИР Пермь</a></p><br>
+								<p>2 предложения</p>
+							</div>
+						</div>
+					</div>
+					<p><a href="#1">Все агенства</a></p>
+				</div>
+
+				<div class="container_0 container_3">
+					<h3>Застройщики</h3>
+					<div class="agency">
+						<div class="agency_1">
+							<div class="agency_0">
+								<img src="img/icons/complogo_1.jpg" alt="">
+								<p><a href="№1">ГК Оникс</a></p><br>
+								<p>178 квартир</p>
+							</div>
+						</div>
+						<div class="agency_1">
+							<div class="agency_0">
+								<img src="img/icons/complogo_2.jpg" alt="">
+								<p><a href="№1">PAN City group</a></p><br>
+								<p>174 квартиры</p>
+							</div>
+						</div>
+						<div class="agency_1">
+							<div class="agency_0">
+								<img src="img/icons/complogo_3.jpg" alt="">
+								<p><a href="№1">Развитие (Пермь)</a></p><br>
+								<p>9 квартир</p>
+							</div>
+						</div>
+					</div>
+					<p><a href="#1">Все застройщики</a></p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+</main>
+
+<footer>
+	<div class="footer_inner">
+		<div class="license">
+			<p>IAKE — база данных о недвижимости. Использование сайта означает согласие с <a href="#1">Пользовательским соглашением</a> и <a href="#1">Политикой конфиденциальности IAKE</a>. Оплачивая лицензионный платеж, вы принимаете <a href="#1">Лицензионное соглашение</a>.</p>
+		</div>
+		<div class="footer_nav">
+			<ul>
+				<li><a href="#1">Справочный центр</a></li>
+				<li><a href="#1">Юридические документы</a></li>
+				<li><a href="#1">Тарифы и цены</a></li>
+				<li><a href="#1">Помощь</a></li>
+				<li><a href="#1">Реклама на сайте</a></li>
+				<li><a href="#1">Программа «Работаю честно»</a></li>
+				<li><a href="#1">Продвижение</a></li>
+				<li><a href="#1">Аукцион</a></li>
+				<li><a href="#1">Поиск на карте</a></li>
+				<li><a href="#1">Реклама IAKE на ТВ</a></li>
+				<li><a href="#1">Вакансии агентств</a></li>
+				<li><a href="#1">Ипотечный калькулятор</a></li>
+				<li><a href="#1">Карьера в Циан</a></li>
+			</ul>
+		</div>
+
+		<div class="iake_group">
+			<div class="group_info">
+				<div class="group_name">
+					<p>iake.групп</p>
+				</div>
+				<div class="group_info">
+					<p>Лидер онлайн-недвижимости России*<br>
+* по количеству посещений сайта cian.ru пользователями сети Интернет<br> по данным LiveInternet в разделе «Недвижимость» по состоянию на 12<br> марта 2020 г.</p>
+				</div>
+			</div>
+
+			<div class="apps">
+				<p>Мобильное приложение IAKE:</p>
+				<img src="img/svg/apple.svg" alt="apple">
+				<img src="img/svg/google.svg" alt="google">
+				<img src="img/svg/huawei.svg" alt="huawei">
+			</div>
+        </div>
+
+		<div class="iake_cite">
+			<p><a href="#1">Iake.ru</a> — достоверная база данных о продаже и аренде жилой, загородной и коммерческой недвижимости</p>
+			<p><a href="#1">EMLS.ru</a> — сайт недвижимости Санкт-Петербурга</p>
+		</div>
+	</div>
+
+	<div class="mobile_version">
+        <div class="mobile_info">
+            <p>© 2021 ЦИАН ГРУПП</p>
+            <p><a href="#1">Мобильная версия сайта</a></p>
+        </div>
+        <div class="age">
+            	<p>16+</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+<script src="script.js"></script>
+</html>
